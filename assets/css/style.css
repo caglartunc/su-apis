@@ -219,6 +219,13 @@ h1, h2, h3 {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
+.people-grid-faculty { gap: 36px 32px; }
+@media (min-width: 760px) {
+  .people-grid-faculty { grid-template-columns: repeat(3, 1fr); }
+}
+
+.empty { color: var(--muted); font-style: italic; margin: 0; }
+
 .person { text-align: left; }
 .person-photo {
   aspect-ratio: 4 / 5;
