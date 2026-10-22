@@ -140,13 +140,12 @@ h1, h2, h3 {
 .hero-cover {
   position: relative;
   background:
-    linear-gradient(90deg, rgba(11, 37, 69, 0.94) 0%, rgba(11, 37, 69, 0.78) 45%, rgba(11, 37, 69, 0.25) 100%),
-    url("../img/campus-pixel.png") center 40% / cover no-repeat,
+    linear-gradient(90deg, rgba(11, 37, 69, 0.9) 0%, rgba(11, 37, 69, 0.72) 38%, rgba(11, 37, 69, 0.15) 62%, rgba(11, 37, 69, 0) 100%),
+    url("../img/campus-cover.jpg") center 30% / cover no-repeat,
     var(--navy);
-  image-rendering: pixelated;
   padding: 120px 0 132px;
 }
-.hero-cover .container { image-rendering: auto; }
+.hero-cover h1, .hero-cover .lead { text-shadow: 0 1px 12px rgba(11, 37, 69, 0.5); }
 .hero .motto {
   font-family: var(--serif);
   font-style: italic;
@@ -160,7 +159,10 @@ h1, h2, h3 {
   bottom: 10px;
   margin: 0;
   font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.75);
+  background: rgba(11, 37, 69, 0.7);
+  padding: 2px 8px;
+  border-radius: 4px;
 }
 .hero-credit a { color: rgba(255, 255, 255, 0.8); text-decoration: underline; }
 
