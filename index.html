@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SU-APIS · Sabancı University</title>
-  <meta name="description" content="SU-APIS, the Applied Intelligence Systems Lab at Sabancı University, brings together AI and communication networks research.">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="SU-APIS, the Applied Intelligence Systems Lab at Sabancı University, develops applied AI for wireless networks, AI hardware, large language models, and trustworthy machine learning.">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -16,8 +17,11 @@
   <header class="site-header">
     <div class="container">
       <a class="brand" href="index.html">
-        <span class="brand-name">SU-APIS</span>
-        <span class="brand-sub">Sabancı University</span>
+        <img class="brand-mark" src="assets/img/brand/apis-emblem.png" alt="">
+        <span class="brand-text">
+          <span class="brand-name">SU-APIS</span>
+          <span class="brand-sub">Sabancı University</span>
+        </span>
       </a>
       <nav class="site-nav">
         <a href="index.html#research">Research</a>
@@ -32,72 +36,86 @@
 
   <main>
 
-    <section class="hero">
+    <section class="hero hero-cover">
       <div class="container">
         <p class="eyebrow">Sabancı University · İstanbul</p>
         <h1>Applied Intelligence Systems Lab</h1>
+        <p class="motto">Intelligentia in Usum</p>
         <p class="lead">
-          SU-APIS brings together AI and communication networks under one roof, advancing
-          intelligent systems, hybrid LLM frameworks, and NLP research. We connect researchers
-          and students to enable innovation, hands-on learning, and global collaboration.
+          SU-APIS develops applied AI for real systems, from 5G/6G wireless networks and AI
+          hardware to large language models, trustworthy machine learning, and Turkish NLP.
         </p>
         <a class="btn btn-primary" href="#research">Our research</a>
         <a class="btn btn-ghost" href="people.html">Meet the team</a>
       </div>
+      <p class="hero-credit">
+        Cover: pixel-art rendering of
+        <a href="https://commons.wikimedia.org/wiki/File:Yurtlardan_g%C3%B6l_manzaras%C4%B1.jpg">a photo</a>
+        by Retropandy, <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+      </p>
     </section>
 
-    <section class="section" id="research">
-      <div class="container">
-        <div class="section-head">
-          <span class="kicker">Research</span>
-          <h2>What we work on</h2>
-          <p>Our work sits at the intersection of machine learning, language, and networked systems.</p>
-        </div>
-
-        <div class="grid">
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v10H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>
-            </div>
-            <h3>Natural Language Processing</h3>
-            <p>Methods for understanding, generating, and evaluating language, including low-resource and multilingual settings.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="8" height="7" rx="1.5"/><rect x="13" y="13" width="8" height="7" rx="1.5"/><path d="M7 11v4a2 2 0 0 0 2 2h4M17 13V9a2 2 0 0 0-2-2h-4"/></svg>
-            </div>
-            <h3>Hybrid LLM Frameworks</h3>
-            <p>Systems that combine large and small language models across edge and cloud for efficient, reliable AI.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="M11 6.8 6 16.2M13 6.8l5 9.4M7 18h10"/></svg>
-            </div>
-            <h3>Network Intelligence</h3>
-            <p>Learning-driven design and optimization of wireless and communication networks.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 10h4v4h-4z"/></svg>
-            </div>
-            <h3>Intelligent Systems</h3>
-            <p>Distributed and trustworthy machine learning, from algorithms to deployed systems.</p>
-          </article>
+    <section class="section">
+      <div class="container about">
+        <img class="about-logo" src="assets/img/brand/apis-logo.png" alt="APIS: Applied Intelligence Systems Lab, Sabancı University">
+        <div>
+          <span class="kicker">About</span>
+          <h2>Who we are</h2>
+          <p>SU-APIS was co-founded by faculty members of the Faculty of Engineering and Natural Sciences
+            at Sabancı University. We bring together expertise in wireless communications, hardware,
+            machine learning, and language technologies to build intelligent systems that work in practice.</p>
+          <a class="btn btn-navy" href="people.html">Meet the team →</a>
+          <a class="fens-logo" href="https://fens.sabanciuniv.edu/">
+            <img src="assets/img/brand/su-fens-logo.png" alt="Sabancı University, Faculty of Engineering and Natural Sciences">
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt">
+    <section class="section section-alt" id="research">
       <div class="container">
         <div class="section-head">
-          <span class="kicker">People</span>
-          <h2>Founding faculty</h2>
-          <p>SU-APIS was co-founded by faculty members of the Faculty of Engineering and Natural Sciences at Sabancı University.</p>
+          <span class="kicker">Research</span>
+          <h2>What we work on</h2>
+          <p>Our work spans the full stack of applied AI, from radios and chips to language models and their security.</p>
         </div>
-        <a class="btn btn-primary" style="background: var(--navy); color: #fff;" href="people.html">See all members →</a>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12v9"/><circle cx="12" cy="10" r="1.6"/><path d="M8.5 6.5a5 5 0 0 0 0 7M15.5 6.5a5 5 0 0 1 0 7M5.6 3.6a9 9 0 0 0 0 12.8M18.4 3.6a9 9 0 0 1 0 12.8"/></svg>
+            </div>
+            <h3>AI for Wireless Networks</h3>
+            <p>Application of AI in wireless communication networks for 5G, 6G, and beyond.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/><path d="M9 13l1.5-2 1.5 2 1.5-2 1.5 2"/></svg>
+            </div>
+            <h3>AI Hardware &amp; Signal Processing</h3>
+            <p>Hardware implementation of AI inference frameworks, and integration of AI with signal processing pipelines.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h11v8H8l-4 3z"/><circle cx="18" cy="12" r="2"/><circle cx="18" cy="20" r="2"/><circle cx="12" cy="20" r="2"/><path d="M18 14v4M14 20h2"/></svg>
+            </div>
+            <h3>Large Language Models &amp; Networks</h3>
+            <p>LLMs for network management and optimization, networked and hybrid LLM architectures, and
+              LLM-driven knowledge representation, including automated knowledge graph construction.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <h3>Robust AI, Finance &amp; Turkish NLP</h3>
+            <p>Security and robustness analysis of neural network models; AI for finance, including
+              time-series forecasting for financial markets; and NLP for low-resource and morphologically
+              rich languages, with a focus on Turkish.</p>
+          </article>
+        </div>
       </div>
     </section>
 

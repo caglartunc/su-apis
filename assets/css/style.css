@@ -71,11 +71,13 @@ h1, h2, h3 {
 
 .brand {
   display: flex;
-  flex-direction: column;
-  line-height: 1.15;
+  align-items: center;
+  gap: 12px;
   color: var(--navy);
 }
 .brand:hover { text-decoration: none; }
+.brand-mark { height: 38px; width: auto; }
+.brand-text { display: flex; flex-direction: column; line-height: 1.15; }
 .brand-name {
   font-family: var(--serif);
   font-size: 1.35rem;
@@ -134,6 +136,34 @@ h1, h2, h3 {
   margin: 0 0 32px;
 }
 
+/* Pixel-art campus cover behind the home hero */
+.hero-cover {
+  position: relative;
+  background:
+    linear-gradient(90deg, rgba(11, 37, 69, 0.94) 0%, rgba(11, 37, 69, 0.78) 45%, rgba(11, 37, 69, 0.25) 100%),
+    url("../img/campus-pixel.png") center 40% / cover no-repeat,
+    var(--navy);
+  image-rendering: pixelated;
+  padding: 120px 0 132px;
+}
+.hero-cover .container { image-rendering: auto; }
+.hero .motto {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: #c9d6ee;
+  margin: -8px 0 22px;
+}
+.hero-credit {
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+  margin: 0;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.hero-credit a { color: rgba(255, 255, 255, 0.8); text-decoration: underline; }
+
 .btn {
   display: inline-block;
   padding: 12px 22px;
@@ -147,6 +177,24 @@ h1, h2, h3 {
 .btn-primary:hover { background: #e9eef7; }
 .btn-ghost { border: 1px solid rgba(255, 255, 255, 0.4); color: #fff; }
 .btn-ghost:hover { background: rgba(255, 255, 255, 0.08); }
+.btn-navy { background: var(--navy); color: #fff; }
+.btn-navy:hover { background: var(--navy-2); }
+
+/* ---------- About ---------- */
+
+.about {
+  display: grid;
+  gap: 48px;
+  align-items: center;
+}
+@media (min-width: 860px) {
+  .about { grid-template-columns: 380px 1fr; }
+}
+.about-logo { width: 100%; max-width: 380px; margin: 0 auto; }
+.about h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+.about p { color: var(--muted); margin: 0 0 24px; max-width: 62ch; }
+.fens-logo { display: block; margin-top: 28px; }
+.fens-logo img { height: 52px; width: auto; }
 
 /* ---------- Page header (inner pages) ---------- */
 
@@ -183,6 +231,10 @@ h1, h2, h3 {
   display: grid;
   gap: 24px;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+@media (min-width: 760px) {
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
 }
 
 .card {
