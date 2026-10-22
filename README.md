@@ -13,3 +13,10 @@ Plain HTML/CSS, served by GitHub Pages. No build step.
 - `assets/img/people/` — member photos (portrait, ~4:5)
 
 Preview locally by opening `index.html` in a browser.
+
+## Regenerating images
+
+- `tools/partners_map.py <ne_110m_admin_0_countries.shp> assets/img/partners-map.png` redraws the collaborators map
+  (needs `geopandas matplotlib`; shapefile from naturalearthdata.com, "Admin 0 – Countries", 1:110m).
+- `tools/make_cover.py <photo.jpg> assets/img/campus-cover.jpg 420 8 28` builds the half-photo / half-pixel-art cover
+  (args: crop top offset, pixel block size, palette colours; needs `pillow numpy`).
