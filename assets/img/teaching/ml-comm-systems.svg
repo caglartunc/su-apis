@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Antenna broadcasting into a neural network">
+  <defs>
+    <radialGradient id="glow1" cx="78%" cy="18%" r="70%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b2545"/>
+      <stop offset="100%" stop-color="#13315c"/>
+    </linearGradient>
+    <linearGradient id="line1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9db8ff"/>
+      <stop offset="100%" stop-color="#e8efff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="360" fill="url(#bg1)"/>
+  <rect width="640" height="360" fill="url(#glow1)"/>
+
+  <g opacity="0.12" stroke="#ffffff" stroke-width="1">
+    <path d="M0 60 H640 M0 120 H640 M0 180 H640 M0 240 H640 M0 300 H640"/>
+    <path d="M80 0 V360 M160 0 V360 M240 0 V360 M320 0 V360 M400 0 V360 M480 0 V360 M560 0 V360"/>
+  </g>
+
+  <!-- Antenna mast -->
+  <g transform="translate(130,255)">
+    <rect x="-3" y="-120" width="6" height="120" fill="#cdd9f2"/>
+    <path d="M0 -120 L-20 -96 M0 -120 L20 -96 M0 -84 L-16 -64 M0 -84 L16 -64" stroke="#cdd9f2" stroke-width="4" stroke-linecap="round"/>
+    <polygon points="0,-120 -14,-100 14,-100" fill="#e8efff"/>
+    <polygon points="-34,10 34,10 20,0 -20,0" fill="#0b2545" stroke="#9db8ff" stroke-width="2"/>
+  </g>
+
+  <!-- Broadcast arcs -->
+  <g fill="none" stroke="#9db8ff" stroke-width="3" stroke-linecap="round">
+    <path d="M152 150 A60 60 0 0 1 152 230" opacity="0.85"/>
+    <path d="M170 128 A95 95 0 0 1 170 252" opacity="0.55"/>
+    <path d="M188 104 A132 132 0 0 1 188 276" opacity="0.3"/>
+  </g>
+
+  <!-- Signal link from antenna to network -->
+  <path d="M210 180 C 300 150, 330 170, 380 170" fill="none" stroke="url(#line1)" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round"/>
+
+  <!-- Neural network nodes -->
+  <g stroke="#6f91d8" stroke-width="1.6" opacity="0.8">
+    <path d="M400 130 L470 100"/>
+    <path d="M400 130 L470 160"/>
+    <path d="M400 130 L470 220"/>
+    <path d="M400 200 L470 100"/>
+    <path d="M400 200 L470 160"/>
+    <path d="M400 200 L470 220"/>
+    <path d="M400 260 L470 160"/>
+    <path d="M400 260 L470 220"/>
+    <path d="M470 100 L540 150"/>
+    <path d="M470 160 L540 150"/>
+    <path d="M470 220 L540 150"/>
+    <path d="M470 160 L540 200"/>
+    <path d="M470 220 L540 200"/>
+  </g>
+  <g fill="#e8efff">
+    <circle cx="400" cy="130" r="7"/>
+    <circle cx="400" cy="200" r="7"/>
+    <circle cx="400" cy="260" r="7"/>
+  </g>
+  <g fill="#9db8ff">
+    <circle cx="470" cy="100" r="6"/>
+    <circle cx="470" cy="160" r="6"/>
+    <circle cx="470" cy="220" r="6"/>
+  </g>
+  <g fill="#2563eb" stroke="#e8efff" stroke-width="1.5">
+    <circle cx="540" cy="150" r="8"/>
+    <circle cx="540" cy="200" r="8"/>
+  </g>
+</svg>

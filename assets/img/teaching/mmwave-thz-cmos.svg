@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Phased-array chip radiating millimeter-wave beams">
+  <defs>
+    <radialGradient id="glow2" cx="22%" cy="82%" r="75%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.42"/>
+      <stop offset="60%" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b2545"/>
+      <stop offset="100%" stop-color="#13315c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="360" fill="url(#bg2)"/>
+  <rect width="640" height="360" fill="url(#glow2)"/>
+
+  <g opacity="0.12" stroke="#ffffff" stroke-width="1">
+    <path d="M0 60 H640 M0 120 H640 M0 180 H640 M0 240 H640 M0 300 H640"/>
+    <path d="M80 0 V360 M160 0 V360 M240 0 V360 M320 0 V360 M400 0 V360 M480 0 V360 M560 0 V360"/>
+  </g>
+
+  <!-- Emanating mmWave / THz beams -->
+  <g fill="none" stroke="#9db8ff" stroke-linecap="round">
+    <path d="M160 300 A130 130 0 0 1 300 170" stroke-width="3" opacity="0.85"/>
+    <path d="M130 300 A170 170 0 0 1 300 130" stroke-width="3" opacity="0.55"/>
+    <path d="M100 300 A210 210 0 0 1 300 90"  stroke-width="3" opacity="0.32"/>
+    <path d="M70  300 A250 250 0 0 1 300 50"  stroke-width="3" opacity="0.18"/>
+  </g>
+
+  <!-- Phased-array chip -->
+  <g transform="translate(118,268)">
+    <rect x="-40" y="-40" width="80" height="80" rx="6" fill="#0e2a4f" stroke="#9db8ff" stroke-width="2"/>
+    <g fill="#e8efff">
+      <circle cx="-22" cy="-22" r="5"/>
+      <circle cx="0"   cy="-22" r="5"/>
+      <circle cx="22"  cy="-22" r="5"/>
+      <circle cx="-22" cy="0"   r="5"/>
+      <circle cx="0"   cy="0"   r="5"/>
+      <circle cx="22"  cy="0"   r="5"/>
+      <circle cx="-22" cy="22"  r="5"/>
+      <circle cx="0"   cy="22"  r="5"/>
+      <circle cx="22"  cy="22"  r="5"/>
+    </g>
+    <g stroke="#6f91d8" stroke-width="2">
+      <path d="M-40 -14 H-54 M-40 10 H-54 M-40 34 H-54"/>
+      <path d="M40 -14 H54 M40 10 H54 M40 34 H54"/>
+      <path d="M-14 -40 V-54 M10 -40 V-54 M34 -40 V-54"/>
+    </g>
+  </g>
+
+  <!-- Frequency / spectrum ticks -->
+  <g stroke="#6f91d8" stroke-width="2" opacity="0.7">
+    <path d="M400 300 H600" stroke-width="1.5"/>
+    <path d="M420 300 V282 M450 300 V270 M480 300 V256 M510 300 V240 M540 300 V220 M570 300 V196"/>
+  </g>
+  <path d="M420 282 Q450 240 480 256 T540 220 Q560 206 570 196" fill="none" stroke="#e8efff" stroke-width="3" stroke-linecap="round"/>
+  <text x="400" y="320" font-family="Inter, sans-serif" font-size="15" fill="#9db8ff" letter-spacing="2">30&#8211;300 GHz</text>
+</svg>

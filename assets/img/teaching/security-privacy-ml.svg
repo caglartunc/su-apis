@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Shielded padlock at the center of a neural network">
+  <defs>
+    <radialGradient id="glow3" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.48"/>
+      <stop offset="60%" stop-color="#2563eb" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b2545"/>
+      <stop offset="100%" stop-color="#13315c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="360" fill="url(#bg3)"/>
+  <rect width="640" height="360" fill="url(#glow3)"/>
+
+  <g opacity="0.12" stroke="#ffffff" stroke-width="1">
+    <path d="M0 60 H640 M0 120 H640 M0 180 H640 M0 240 H640 M0 300 H640"/>
+    <path d="M80 0 V360 M160 0 V360 M240 0 V360 M320 0 V360 M400 0 V360 M480 0 V360 M560 0 V360"/>
+  </g>
+
+  <!-- Outer ring of network nodes -->
+  <g id="ring" stroke="#6f91d8" stroke-width="1.4" opacity="0.75">
+    <path d="M320 180 L170 95"/>
+    <path d="M320 180 L170 265"/>
+    <path d="M320 180 L470 95"/>
+    <path d="M320 180 L470 265"/>
+    <path d="M320 180 L320 70"/>
+    <path d="M320 180 L320 290"/>
+    <path d="M170 95 L320 70"/>
+    <path d="M470 95 L320 70"/>
+    <path d="M170 265 L320 290"/>
+    <path d="M470 265 L320 290"/>
+  </g>
+  <g fill="#9db8ff">
+    <circle cx="170" cy="95" r="7"/>
+    <circle cx="170" cy="265" r="7"/>
+    <circle cx="470" cy="95" r="7"/>
+    <circle cx="470" cy="265" r="7"/>
+    <circle cx="320" cy="70" r="7"/>
+    <circle cx="320" cy="290" r="7"/>
+  </g>
+
+  <!-- Shield -->
+  <g transform="translate(320,180)">
+    <path d="M0 -78 L62 -52 V8 C62 56 32 86 0 100 C-32 86 -62 56 -62 8 V-52 Z"
+          fill="#0e2a4f" stroke="#e8efff" stroke-width="3"/>
+    <!-- Padlock -->
+    <rect x="-26" y="-6" width="52" height="42" rx="7" fill="#e8efff"/>
+    <path d="M-16 -6 V-22 a16 16 0 0 1 32 0 V-6" fill="none" stroke="#e8efff" stroke-width="7"/>
+    <circle cx="0" cy="14" r="6" fill="#0b2545"/>
+    <rect x="-3" y="14" width="6" height="14" fill="#0b2545"/>
+  </g>
+</svg>

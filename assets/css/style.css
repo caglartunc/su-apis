@@ -265,6 +265,21 @@ h1, h2, h3 {
 }
 .card-icon svg { width: 22px; height: 22px; }
 
+/* ---------- Teaching ---------- */
+
+.course-card { padding: 0; overflow: hidden; }
+.course-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: var(--navy);
+}
+.course-card .course-body { padding: 24px 28px 28px; }
+.course-card .kicker { margin-bottom: 8px; }
+.course-card p { margin-top: 10px; }
+.course-card .instructor { display: block; margin-top: 12px; font-size: 0.9rem; font-weight: 600; color: var(--ink); }
+.course-card .instructor a { font-weight: 600; }
+
 /* ---------- People ---------- */
 
 .people-grid {
